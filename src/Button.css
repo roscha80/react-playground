@@ -1,0 +1,11 @@
+.Button {
+  padding: 12px;
+  background: skyblue;
+  color: black;
+  border: none;
+  border-radius: 5px;
+}
+
+.Button.active:hover {
+  background: hotpink;
+}
