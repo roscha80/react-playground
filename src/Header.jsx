@@ -3,7 +3,7 @@ import Button from './Button'
 
 import './Header.css'
 
-export default ({ children, isBackButtonVisible }) => {
+export default function Header({ children, isBackButtonVisible }) {
   return (
     <header className="Header">
       <Button hidden={!isBackButtonVisible} isActive>
