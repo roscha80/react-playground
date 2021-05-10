@@ -7,7 +7,7 @@
 }
 
 .Button.active {
-  background: hotpink;
+  background: rgb(22, 173, 233);
 }
 
 .Button.disabled {

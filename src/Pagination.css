@@ -4,6 +4,6 @@
   align-items: center;
 }
 
-.Pagination button .disabled {
-  opacity: 20%;
+.Pagination button.active {
+  background: rgb(22, 173, 233);
 }
