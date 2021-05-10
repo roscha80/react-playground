@@ -6,9 +6,9 @@ import PaginationText from './PaginationText'
 export default ({ text, isLeftDisabled, isRightDisabled }) => {
   return (
     <section className="Pagination">
-      <Button className={isLeftDisabled ? '' : 'active'}>Zurück</Button>
+      <Button isActive={!isLeftDisabled}>Zurück</Button>
       {text}
-      <Button className={isRightDisabled ? '' : 'active'}>Vor</Button>
+      <Button isActive={!isRightDisabled}>Vor</Button>
     </section>
   )
 }
