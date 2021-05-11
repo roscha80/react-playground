@@ -28,3 +28,7 @@
 .Card__bookmark--added {
   background: black;
 }
+
+.hidden {
+  display: none;
+}
