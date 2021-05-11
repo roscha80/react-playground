@@ -8,22 +8,23 @@
   border: none;
   border-radius: 5px;
   position: relative;
+  margin: 12px;
 }
 
-.Card.bookmark {
-  border: 10px solid white;
-  border-bottom-color: transparent;
+.Card__title {
+  font-weight: 400;
+}
+
+.Card__bookmark {
   height: 30px;
+  width: 20px;
   position: absolute;
   right: 10px;
   top: -10px;
+  background: #886565;
+  border: none;
 }
 
-.Card.bookmark--added {
-  border: 10px solid black;
-  border-bottom-color: transparent;
-  height: 30px;
-  position: absolute;
-  right: 10px;
-  top: -10px;
+.Card__bookmark--added {
+  background: black;
 }

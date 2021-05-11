@@ -9,7 +9,3 @@
 .Button.active {
   background: blue;
 }
-
-.Button.disabled {
-  opacity: 30%;
-}
