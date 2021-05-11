@@ -19,7 +19,11 @@
   top: -10px;
 }
 
-.Card.bookmark_added {
+.Card.bookmark--added {
   border: 10px solid black;
   border-bottom-color: transparent;
+  height: 30px;
+  position: absolute;
+  right: 10px;
+  top: -10px;
 }
