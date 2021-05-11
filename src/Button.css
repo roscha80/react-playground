@@ -6,6 +6,10 @@
   border-radius: 5px;
 }
 
-.Button.active:hover {
-  background: hotpink;
+.Button.active {
+  background: rgb(22, 173, 233);
+}
+
+.Button.disabled {
+  opacity: 30%;
 }

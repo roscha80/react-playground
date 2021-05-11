@@ -1,9 +1,9 @@
 import './Button.css'
 import * as React from 'react'
 
-export default ({ children, isActive }) => {
+export default function Button({ children, isActive, hidden }) {
   return (
-    <button className={isActive ? 'Button active' : 'Button'}>
+    <button hidden={hidden} className={isActive ? 'Button active' : 'Button'}>
       {children}
     </button>
   )
