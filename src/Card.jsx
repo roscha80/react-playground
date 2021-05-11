@@ -1,13 +1,12 @@
 import * as React from 'react'
 import './Card.css'
 
-export default function Card({ title, text, isBookmarked, isVisible }) {
+export default function Card({ title, text, isBookmarked, isVisible, tags }) {
   const bookmarkClass = isBookmarked
     ? 'Card__bookmark Card__bookmark--added'
     : 'Card__bookmark'
 
   const answerClass = isVisible ? '' : 'hidden'
-  console.log(answerClass)
 
   return (
     <section className="Card">
@@ -18,6 +17,11 @@ export default function Card({ title, text, isBookmarked, isVisible }) {
       <p className={answerClass} aria-label="Answer">
         {text}
       </p>
+      <ul className="Card__tags">
+        {tags.map(tag => (
+          <li>{tag}</li>
+        ))}
+      </ul>
     </section>
   )
 }
