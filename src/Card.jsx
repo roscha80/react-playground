@@ -1,22 +1,27 @@
 import * as React from 'react'
-import Button from './Button'
 import './Card.css'
 
-export default function Card(isBookmarked) {
+export default function Card({ title, text, isBookmarked, isVisible, tags }) {
+  const bookmarkClass = isBookmarked
+    ? 'Card__bookmark Card__bookmark--added'
+    : 'Card__bookmark'
+
+  const answerClass = isVisible ? '' : 'hidden'
+
   return (
     <section className="Card">
-      <div
-        role="button"
-        name="bookmark"
-        className={isBookmarked ? 'Card bookmark' : 'Card'}
-      />
-      <h2>Überschrift</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo fugit
-        asperiores perspiciatis porro explicabo quibusdam odit tempora atque
-        ipsam magnam itaque consequuntur eaque excepturi sit vitae expedita
-        omnis, blanditiis iure.
+      <button className={bookmarkClass} aria-label="Bookmark card" />
+      <h2 className="Card__title" aria-label="Question">
+        {title}
+      </h2>
+      <p className={answerClass} aria-label="Answer">
+        {text}
       </p>
+      <ul className="Card__tags">
+        {tags.map(tag => (
+          <li>{tag}</li>
+        ))}
+      </ul>
     </section>
   )
 }

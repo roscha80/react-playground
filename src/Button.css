@@ -7,9 +7,5 @@
 }
 
 .Button.active {
-  background: rgb(22, 173, 233);
-}
-
-.Button.disabled {
-  opacity: 30%;
+  background: blue;
 }
